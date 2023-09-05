@@ -1,0 +1,156 @@
+@font-face {
+  font-family: general;
+  src: url(Graphik-Bold-Trial.otf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: general;
+}
+
+body {
+  background-color: #212332;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  padding: 3rem 3rem;
+  border-radius: 5px;
+  background-color: #1c1d2b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 170px;
+  height: 180px;
+  border: 3px solid #fffffc;
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 33px;
+  text-align: center;
+  color: #ff4950;
+}
+
+p {
+  color: #fffffc;
+  width: 300px;
+  text-align: center;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+button {
+  color: #fffffc;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #212332;
+  background-color: #ff4950;
+  transition: 0.3s;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+button:hover {
+  color: #ff4950;
+  border: 1px solid #fffffc;
+  background-color: #212332;
+  transform: translateY(-5px);
+}
+
+.fa-brands {
+  color: #fffffc;
+  font-size: 40px;
+  margin-left: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.fa-brands:hover {
+  transform: scale(1.2, 1.2) skew(5deg, 2deg);
+}
+
+.fa-square-github {
+  margin-left: 0px;
+}
+.fa-square-github:hover {
+  color: black;
+}
+.fa-square-twitter:hover {
+  color: #1da1f2;
+}
+.fa-square-instagram:hover {
+  background: linear-gradient(to right, #d62976, #fa7e1e, #962fbf);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* tablet */
+@media (max-width: 768px) {
+    h1{
+        font-size: 25px;
+    }
+    p{
+        font-size: 20px;
+        width: 300px;
+    }
+    button{
+        font-size: 17px;
+        margin-bottom: 25px;
+    }
+    .card{
+        padding: 2rem 3rem;
+    }
+}
+/* mobile */
+@media (max-width: 425px){
+    .card{
+        padding: 2rem 3rem;
+    }
+    img{
+        width: 120px;
+        height: 130px;
+    }
+    h1{
+        font-size: 23px;
+    }
+    p{
+        font-size: 15px;
+        width: 200px;
+    }
+    button{
+        font-size: 17px;
+        margin-bottom: 25px;
+    }
+    .fa-brands{
+        font-size: 40px;
+    }
+    .card{
+        padding: 2rem 3rem;
+    }
+}
+
+/* colors */
+.color1 {
+  color: #212332;
+}
+.color2 {
+  color: #ff4950;
+}
+.color3 {
+  color: #fffffc;
+}
